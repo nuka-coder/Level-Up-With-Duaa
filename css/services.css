@@ -1,0 +1,275 @@
+:root {
+    --primary1: #D29E3B;
+    --primary2: #949D77;
+    --primary3: #D5937D;
+
+    --secondary1: #F1BC53;
+    --offWhite: #FDFBF6;
+    --secondary3: #ADAAA1;
+    --secondary4: #56544E;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: var(--offWhite);
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    text-align: center;
+}
+h1 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3.75em;
+    font-weight: 400;
+    margin: 0;
+}
+h2 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0;
+}
+h3, h4, h5, h6 {
+    font-family: Montserrat, monospace;
+    font-weight: 600;
+    margin: 0;
+}
+h3 {font-size: 2.25em;}
+h4 {font-size: 1.875em;}
+h5 {font-size: 1.625em;}
+h6 {font-size: 1.375em;}
+
+p {
+    font-family: 'Montserrat', monospace;
+    font-size: 22px;
+    font-weight: 100;
+    margin: 0;
+}
+
+footer {
+  background-color: var(--primary2);
+  height: 80px;
+  width: 100%;
+}
+
+/* Services Landing */
+
+.services-landing-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 5em 6.25em 0;
+}
+
+.landing-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-heading {
+    color: var(--primary1);
+    margin: 0 0 40px;
+}
+.main-subheading {
+    color: var(--secondary4);
+    text-transform: uppercase;
+}
+.main-p-text {
+    color: var(--secondary3);
+    margin: 0 auto 0;
+    text-align: center;
+    width: 60%;
+}
+
+/* Buttons */
+.scroll-btn {
+    align-items: center;
+    background-color: var(--primary1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    margin: 2.15em 0 1em;
+}
+
+.scroll-icon {
+  color: var(--offWhite);
+  font-size: 2.25em;
+}
+
+/* Cards */
+
+.card {
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+}
+/* .card p {
+    color: var(--primary4);
+    font-size: 1.25em;
+    padding: 1em 2.75em;
+} */
+
+.card-circle {
+    border-radius: 50%;
+    height: 4.625em;
+    width: 4.624em;
+    position: absolute;
+    top: -2.31em;
+}
+
+.card-style1 {
+    border: 5px solid var(--primary1);
+}
+.card-style2 {
+    border: 5px solid var(--primary2);
+}.card-style3 {
+    border: 5px solid var(--primary3);
+}
+
+/* Services Section */
+.services-section,
+.pricing-section {
+    text-align: center;
+}
+
+.services-heading {
+    color: var(--primary4);
+    margin: 2.5em 0 40px;;
+}
+
+
+/*  Card Stylings (Services Section cont'd)*/
+.cards-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5em 0 0;
+}
+.card {
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    position: relative;
+    height: 25em;
+    width: 25vw;
+    text-align: center;
+}
+.service-text {
+    color: var(--primary4);
+    font-size: 1.25em;
+    padding: 1.875em;
+    width: 80%;
+}
+
+.card-circle {
+    align-items: center;
+    color: var(--offWhite);
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    height: 8.875em;
+    width: 8.875em;
+    position: absolute;
+    top: -4.5em;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.color1 {
+    background-color: var(--primary1);
+}
+.color2 {
+    background-color: var(--primary2);
+}
+.color3 {
+    background-color: var(--primary3);
+}
+.card-circle p {
+    font-size: 1.25em;
+}
+.card-style1 {
+    border: 5px solid var(--primary1);
+}
+.card-style2 {
+    border: 5px solid var(--primary2);
+}
+.card-style3 {
+    border: 5px solid var(--primary3);
+}
+
+/* Pricing Section */
+#Pricing {
+  /* margin between services section */
+  margin: 5em 0;
+}
+.pricing-card {
+    flex-direction: column;
+}
+.pricing-card-heading {
+  color: var(--secondary4);
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  /* margin between card heading and pricing icon */
+  margin: 1em 0 0;
+}
+.pricing-card p {
+    color: var(--secondary4);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.pricing-symbol {
+  font-family: Abril Fatface, sans-serif;
+  font-size: 60px !important;
+  font-weight: 400;
+  text-align: left;
+}
+
+.line {
+    border-bottom: 2.5px solid var(--secondary3);
+    margin: 20px 0;
+    width: 80%;
+}
+.rank-symbol {
+    color: var(--secondary4);
+    font-family: 'Abril Fatface', monospace;
+    font-size: 60px;
+}
+
+.price-btn {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1em 2em;
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    bottom: -50px;
+}
+
+.price-btn h5 {
+    color: var(--offWhite) !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* ----- Media Queries ----- */
+
+@media only screen and (max-width: 900px) {
+  .cards-container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 80vw;
+    margin-top: 3.5em;
+  }
+}

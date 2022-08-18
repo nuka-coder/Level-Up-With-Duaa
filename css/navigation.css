@@ -1,0 +1,289 @@
+:root {
+  --primary1: #D29E3B;
+  --primary2: #949D77;
+  --primary3: #D5937D;
+  --secondary1: #F1BC53;
+  --offWhite: #FDFBF6;
+  --secondary3: #ADAAA1;
+  --secondary4: #56544E;
+  --primary1Hover: #9e742c;
+}
+
+/* ----- Global Stylings ----- */
+a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
+body {
+  background-color: var(--offWhite);
+  margin: 0;
+  position: relative;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 2em;
+  width: 7em;
+  /* hover color change transition */
+  transition: background-color, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+p {
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/* ----- Header ----- */
+.header-top {
+  align-items: center;
+  background-color: var(--primary3);
+  display: flex;
+  justify-content: flex-end;
+  height: 3em;
+  width: 100%;
+  z-index: 1;
+}
+
+.primary3 {
+  background-color: var(--primary3);
+}
+
+.primary2 {
+  background-color: var(--primary2);
+}
+
+.language-tag {
+  color: var(--offWhite);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 5em 0 0;
+}
+
+/* ----- Navigation ----- */
+.logo-container {
+  position: absolute;
+  left: 2em;
+  top: 1%;
+}
+
+.logo {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+}
+
+/*  DESKTOP NAVIGATION */
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 5em 1em 16em;
+}
+
+.navlinks-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navlink {
+  border-style: none;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, .15);
+  color: var(--offWhite);
+  font-weight: 300;
+  margin: 0 1em;
+  z-index: 20;
+}
+
+/* MOBILE NAVIGATION */
+/* Style the navigation menu */
+.mobile-nav {
+  display: none;
+  overflow: hidden;
+  background-color: var(--primary2);
+  position: relative;
+}
+
+.hamburger-icon {
+  color: var(--primary2);
+  font-size: 1.75em !important;
+}
+/* Style the hamburger menu */
+.mobile-nav a.icon {
+  display: block;
+  margin-right: 4.5em;
+  padding: 30px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mobile-logo {
+  padding: 0 1em;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.mobile-nav #mobileLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.mobile-nav a {
+  color: white;
+  padding: 0 16px;
+  text-decoration: none;
+  font-size: 1.25em;
+  display: block;
+}
+
+#mobileLinks a {
+  padding: 14px 16px;
+  text-align: center;
+}
+
+/* Add a grey background color on mouse-over */
+#mobileLinks a:hover {
+  background-color: var(--secondary1);
+  color: var(--offWhite);
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: var(--offWhite);
+  color: white;
+  height: 90px;
+  text-align: left;
+}
+
+/* ----- ANIMATED ICONS ----- */
+.icon-container {
+  position: relative;
+  z-index: 20;
+}
+
+.events-icon {
+  display: none;
+  height: 60px;
+  width: auto;
+  position: absolute;
+  top: -60px;
+  right: 35%;
+  z-index: -10;
+}
+
+.services-icon {
+  display: none;
+  height: 60px;
+  width: auto;
+  position: absolute;
+  top: -60px;
+  right: 35%;
+  z-index: -10;
+}
+
+.about-icon {
+  display: none;
+  height: 60px;
+  width: auto;
+  position: absolute;
+  top: -60px;
+  right: 35%;
+  z-index: -10;
+}
+
+/* MEMBER BUTTONS */
+.login-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  /* space between main nav links and member btns */
+  margin-left: 7em;
+}
+
+.login-btn {
+  background-color: var(--offWhite);
+  border: 3px solid var(--primary1);
+  color: var(--primary1);
+  height: 2.5em;
+  width: 7em;
+  /* margin between navbar member btns */
+  margin-right: .75em;
+}
+
+.login-btn:hover {
+  background-color: var(--primary2);
+  border: none;
+  color: var(--offWhite);
+  transform: scale(1.1, 1.1);
+}
+
+.becomeClient-btn {
+  background-color: var(--primary1);
+  border: none;
+  color: var(--offWhite);
+  font-size: 16px;
+  height: 2.75em;
+  width: 12em;
+}
+
+.becomeClient-btn:hover {
+  background-color: var(--primary2);
+  transform: scale(1.1, 1.1);
+}
+
+/* Filler */
+.filler {
+  background-color: var(--primary3);
+  height: 80vh;
+  margin: 0;
+  width: 100%;
+}
+
+/* ----- Media Queries ----- */
+@media only screen and (max-width: 1030px) {
+  .desktop-nav, .logo {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .login-container {
+    /* space between main nav links and member btns */
+    margin-left: 5em;
+  }
+
+  .login-btn {
+    border: 2px solid var(--primary1);
+    height: 3em;
+    font-size: 14px;
+    width: 6em;
+    /* margin between navbar member btns */
+    margin-right: 1.5em;
+  }
+
+  .becomeClient-btn {
+    font-size: 14px;
+    height: 3em;
+    width: 10em;
+  }
+
+  .nav {
+    /* decreasing this leftside-margin so that smaller screens don't cause overflow */
+    margin: 1em 5em 1em 12em;
+  }
+}

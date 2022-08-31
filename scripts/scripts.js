@@ -50,4 +50,5 @@ $("#about-btn").hover(function() {
 $(".icon").click(function(){
   var menu = $("#mobileLinks");
 menu.slideToggle();
+$(".homepage-landing-section").css("margin-top", "0");
 })

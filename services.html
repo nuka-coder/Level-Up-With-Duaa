@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,161 +27,203 @@
     </div>
     <!-- Logo -->
     <div class="logo-container">
-      <img class="logo" src="images/logo.png" alt="Level Up with Duaa Logo">
+      <a href="index.html"><img class="logo" src="images/logo.png" alt="Level Up with Duaa Logo"></a>
     </div>
 
     <!-- Desktop Navbar -->
     <nav class="nav desktop-nav">
-    <div>
+      <div>
 
-    <div class="navlinks-container">
-      <div class="icon-container">
-        <button style="background-color: var(--primary1)" class="navlink" id="about-btn">About</button>
-        <img class="about-icon" id="about-icon" src="images/about-icon.png" alt="about icon">
-      </div>
+        <div class="navlinks-container">
+          <div class="icon-container">
+            <button style="background-color: var(--primary1)" class="navlink" id="about-btn">About</button>
+            <img class="about-icon" id="about-icon" src="images/about-icon.png" alt="about icon">
+          </div>
 
-      <div class="icon-container">
-      <a href="services.html"><button style="background-color: var(--primary2)" class="navlink" id="services-btn">Services</button></a>
-      <img class="services-icon" id="services-icon" src="images/services-icon.png" alt="services icon">
-      </div>
+          <div class="icon-container">
+            <a href="services.html"><button style="background-color: var(--primary2)" class="navlink" id="services-btn">Services</button></a>
+            <img class="services-icon" id="services-icon" src="images/services-icon.png" alt="services icon">
+          </div>
 
-      <div class="icon-container">
-        <button style="background-color: var(--primary3)" class="navlink" id="events-btn">Events</button>
-        <img class="events-icon" id="events-icon" src="images/events-icon.png" alt="event icon">
+          <div class="icon-container">
+            <button style="background-color: var(--primary3)" class="navlink" id="events-btn">Events</button>
+            <img class="events-icon" id="events-icon" src="images/events-icon.png" alt="event icon">
+          </div>
+          <div class="login-container">
+            <button class="login-btn member-btns">Login</button>
+            <button class="becomeClient-btn member-btns">Become A Client</button>
+          </div>
+        </div>
       </div>
-      <div class="login-container">
-        <button class="login-btn member-btns">Login</button>
-        <button class="becomeClient-btn member-btns">Become A Client</button>
-      </div>
-    </div>
-    </div>
     </nav>
 
     <!-- Mobile Navigation Menu -->
-  <div class="mobile-nav">
-    <a href="#home" class="active"><img class="mobile-logo" style="width: 100px; height: 100px;"  src="images/logo.png" alt="logo"></a>
+    <div class="mobile-nav">
+      <a href="index.html" class="active"><img class="mobile-logo" style="width: 100px; height: 100px;" src="images/logo.png" alt="logo"></a>
 
-    <!-- Navigation links (hidden by default) -->
-    <div id="mobileLinks">
-      <a href="navigation.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="events.html">Events</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="mobileLinks">
+        <a href="navigation.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="events.html">Events</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars hamburger-icon"></i>
+      </a>
     </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon">
-      <i class="fa fa-bars hamburger-icon"></i>
-    </a>
-  </div>
 
   </header>
 
-<!-- Landing Section -->
-<section class="services-landing-section">
-<div class="landing-content">
-     <div>
-     <h1 class="main-heading">Choose the Package <br> That's Right for You</h1>
-     </div>
+  <!-- Landing Section -->
+  <section class="services-landing-section">
+    <div class="landing-content">
+      <div>
+        <h1 class="main-heading">Choose the Package <br> That's Right for You</h1>
+      </div>
 
-   <div>
-     <h2 class="main-subheading">medium subheading about services</h2>
-   </div>
+      <div>
+        <h2 class="main-subheading" style="font-size: 2em;">EVERYONE'S NEEDS ARE DIFFERENT
+</h2>
+      </div>
 
-   <div>
-     <p class="main-p-text">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et vel quidem fugit porro, mollitia ab, numquam, repudiandae distinctio voluptatibus dolorem quibusdam sequi provident doloremque magnam non? Eligendi, wum tenetur.
-     </p>
-   </div>
+      <div>
+        <p class="main-p-text">
+          That's why we offer different packages that cater to your own specific circumstances.
+        </p>
+      </div>
 
-   <a style="text-decoration: none;" href="#Services" class="scroll-btn"><i class="fas fa-angle-double-down scroll-icon"></i></a>
-</div>
-</section>
+      <a style="text-decoration: none;" href="#Services" class="scroll-btn"><i class="fas fa-angle-double-down scroll-icon"></i></a>
+    </div>
+  </section>
 
-<!-- Services Section -->
+  <!-- Services Section -->
 
-<section id="Services" class="services-section">
-<h2 class="services-heading">Services</h2>
-<div class="cards-container">
-  <div class="card card-style1">
-          <div class="card-circle color1">
-            <p>Service 1</p>
-          </div>
-          <p class="service-text">
-            Service 1 text. Service 1 text. Service 1 text. Service 1 text. Service 1 text. Service 1 text. Service 1 text. Service 1 text. Service 1 text. Service 1 text.
-          </p>
-  </div>
+  <section id="Services" class="services-section">
+    <h2 class="services-heading">Services</h2>
+    <div class="cards-container">
+      <div class="card card-style1">
+        <div class="card-circle color1">
+          <p>BASIC</p>
+        </div>
+        <ul class="unordered-list-service-text">
+          <li>One-on-one coaching</li>
+          <li> One Hour of coaching per week/ every other week
+          </li>
+          <li> One Hour of coaching per week/ every other week
+          </li>
+          <li> Spirituality infused coaching
+          </li>
+          <li> Summary of Coaching after each session
+          </li>
+          <li> 3-point Action Items and accountability check each session
+          </li>
+          <li> Access to email support
+          </li>
+        </ul>
+      </div>
 
-  <div class="card card-style2">
-          <div class="card-circle color2">
-            <p>Service 2</p>
-          </div>
-          <p class="service-text">
-            Service 2 text. Service 2 text. Service 2 text. Service 2 text. Service 2 text. Service 2 text. Service 2 text. Service 2 text. Service 2 text. Service 2 text.
+      <div class="card card-style2">
+        <div class="card-circle color2">
+          <p>PREMIUM</p>
+        </div>
+        <ul class="unordered-list-service-text">
+          <li class="highlighted-li-items">BASIC Services included</li>
 
-          </p>
-  </div>
+          <li>8-week coaching session
+          </li>
+          <li>Access to Raw Notes and details of the conversation
+          </li>
+          <li>Access to voice message inquiry and response about situational occurrences
+          </li>
+        </ul>
+      </div>
 
-  <div class="card card-style3">
-          <div class="card-circle color3">
-            <p>Service 3</p>
-          </div>
-          <p class="service-text">
-            Service 3 text. Service 3 text. Service 3 text. Service 3 text. Service 3 text. Service 3 text. Service 3 text. Service 3 text. Service 3 text. Service 3 text.
+      <div class="card card-style3">
+        <div class="card-circle color3">
+          <p>GOLD</p>
+        </div>
+        <ul class="unordered-list-service-text">
+          <li class="highlighted-li-items">BASIC and PREMIUM Services included</li>
+          <li>Additional access to unscheduled 30 min calls for situational occurrences within work week hours
+          </li>
+          <li>Re-envisioning and mapping out client daily tasks on an hourly basis
+          </li>
+          <li>Additional Access to Accountability via email, phone call, or text
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-          </p>
-  </div>
-</div>
-</section>
+  <!-- Pricing Section -->
+  <section id="Pricing" class="pricing-section">
+    <h2 className="services-heading">Pricing</h2>
+    <div class="cards-container">
+      <div class="card card-style1 pricing-card">
+        <div class="card-circle color1">
+          <p style="color: var(--offWhite);" class="pricing-symbol">$</p>
+        </div>
+        <h4 class="pricing-card-heading">Basic Package</h4>
+        <div class="line"></div>
+        <p class="pricing-symbol">$</p>
+        <p class="pricing-card-text">How it's billed</p>
+        <div class="line"></div>
+        <a href="#Services" style="text-decoration: none;">
+          <p id="pricing-card-anchor" class="pricing-card-text">What package includes</p>
+        </a>
+      </div>
 
-<!-- Pricing Section -->
-<section id="Pricing" class="pricing-section">
- <h2 className="services-heading">Pricing</h2>
- <div class="cards-container">
-   <div class="card card-style1 pricing-card">
-           <div class="card-circle color1">
-             <p>Pricing Icon</p>
-           </div>
-           <h4 class="pricing-card-heading">Package Name</h4>
-           <div class="line"></div>
-           <p class="pricing-symbol">$</p>
-           <p class="pricing-card-text">How it's billed</p>
-           <div class="line"></div>
-           <p class="pricing-card-text">What package includes</p>
-   </div>
+      <div class="card card-style2 pricing-card">
+        <div class="card-circle color2">
+          <p style="color: var(--offWhite);" class="pricing-symbol">$$</p>
+        </div>
+        <h4 class="pricing-card-heading">Premium Package</h4>
+        <div class="line"></div>
+        <p class="pricing-symbol">$$</p>
+        <p class="pricing-card-text">How it's billed</p>
+        <div class="line"></div>
+        <a href="#Services" style="text-decoration: none;">
+          <p id="pricing-card-anchor" class="pricing-card-text">What package includes</p>
+        </a>
+      </div>
 
-   <div class="card card-style2 pricing-card">
-           <div class="card-circle color2">
-             <p>Pricing Icon</p>
-           </div>
-           <h4 class="pricing-card-heading">Package Name</h4>
-           <div class="line"></div>
-           <p class="pricing-symbol">$$</p>
-           <p class="pricing-card-text">How it's billed</p>
-           <div class="line"></div>
-           <p class="pricing-card-text">What package includes</p>
-   </div>
+      <div class="card card-style3 pricing-card">
+        <div class="card-circle color3">
+          <p style="color: var(--offWhite);" class="pricing-symbol">$$$</p>
+        </div>
+        <h4 class="pricing-card-heading">Gold Package</h4>
+        <div class="line"></div>
+        <p class="pricing-symbol">$$$</p>
+        <p class="pricing-card-text">How it's billed</p>
+        <div class="line"></div>
+        <a href="#Services" style="text-decoration: none;">
+          <p id="pricing-card-anchor" class="pricing-card-text">What package includes</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-   <div class="card card-style3 pricing-card">
-           <div class="card-circle color3">
-             <p>Pricing Icon</p>
-           </div>
-           <h4 class="pricing-card-heading">Package Name</h4>
-           <div class="line"></div>
-           <p class="pricing-symbol">$$$</p>
-           <p class="pricing-card-text">How it's billed</p>
-           <div class="line"></div>
-           <p class="pricing-card-text">What package includes</p>
-   </div>
- </div>
-</section>
+  <section>
+    <footer>
+      <div class="footer-div">
+        <a href="about.hmtl#div-faq">
+          <p class="footer-FAQ">FAQ</p>
+        </a>
+        <a href="contact.html">
+          <p class="footer-contact">Contact</p>
+        </a>
+      </div>
+      <div class="footer-copywright-div">
+        <p class="copywright">Level Up With Duaa 2022 ©</p>
+      </div>
 
-<section>
-  <footer>
-
-  </footer>
-</section>
+    </footer>
+  </section>
 
 
-<!-- Jquery CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
+
 </html>

@@ -8,6 +8,7 @@
     --secondary3: #ADAAA1;
     --secondary4: #56544E;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,8 +19,13 @@ body {
     padding: 0;
     text-align: center;
 }
+
+button:hover {
+  transform: scale(1.1, 1.1);
+}
+
 h1 {
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Abril Fatface', sans-serif !important;
     font-size: 3.75em;
     font-weight: 400;
     margin: 0;
@@ -40,6 +46,10 @@ h4 {font-size: 1.875em;}
 h5 {font-size: 1.625em;}
 h6 {font-size: 1.375em;}
 
+a {
+  text-decoration: none;
+}
+
 p {
     font-family: 'Montserrat', monospace;
 }
@@ -47,27 +57,37 @@ p {
 footer {
   background-color: var(--primary2);
   height: 80px;
-  width: 100%;
+  padding: 1.25em 1em .5em;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
+section {
+  background-color: var(--offWhite);
+}
 .homepage-landing-section {
     background-color: var(--primary3);
     display: flex;
     justify-content: space-around;
-    margin: 2.5em 0 1em;
-    padding: 2.5em 1em 5em;
+    margin: 3.5em 0 1em;
     position: relative;
+    z-index: 10;
 }
 
 .landing-content {
+    background-color: rgba(213, 147, 125, .417);
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2.5em 1em 5em;
+    height: 70vh;
 }
 
 .landing-heading {
     color: var(--offWhite);
+    text-shadow: 2px 1px var(--primary2);
     margin: 10px 0 10px;
 }
 .landing-subheading {
@@ -76,10 +96,14 @@ footer {
     text-transform: uppercase;
 }
 .landing-p-text {
+    background-color: rgba(148, 157, 119, .7);
+    border-radius: 10px;
     color: var(--offWhite);
     margin: 0 auto 1em;
     text-align: center;
-    width: 60%;
+    width: 40%;
+    font-weight: 400;
+    padding: 1em;
 }
 
 .landing-btns-div {
@@ -93,6 +117,10 @@ footer {
   border-style: none;
 }
 
+.language-tag {
+  font-weight: 600;
+}
+
 .services-btn-landing {
   background-color: var(--offWhite);
   border: none;
@@ -101,7 +129,9 @@ footer {
 }
 
 .services-btn-landing:hover {
-  color:
+  background-color: var(--primary3);
+  color: var(--offWhite);
+  border: 3px solid var(--offWhite)
 }
 
 .register-btn-landing {
@@ -112,7 +142,10 @@ footer {
 }
 
 .register-btn-landing:hover {
-  background-color: #656B51;
+  background-color: var(--offWhite);
+  border: 3px solid var(--primary2);
+  color: var(--primary2);
+  transform: scale(1.1, 1.1);
 }
 
 .register-btn-landing:active {
@@ -139,7 +172,7 @@ footer {
 }
 
 .custom-shape-divider-bottom-1661731252 .shape-fill {
-    fill: #FDFBF6;
+    fill: var(--offWhite);
 }
 
 /* Index Webinar Section */
@@ -154,11 +187,6 @@ footer {
   margin: 1em 0;
 }
 
-.page-logo {
-  height: 150px;
-  width: 150px;
-}
-
 .webinar-heading {
   color: var(--primary2);
 }
@@ -166,8 +194,10 @@ footer {
 .webinar-main-content {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
+  padding: 1em 2em;
 }
 
 .webinar-title {
@@ -178,20 +208,21 @@ footer {
 .flyer-div img {
   border: 1px solid var(--secondary4);
   border-radius: 10px;
-  width: 400px;
+  width: 500px;
 }
 
 .webinar-text-content {
   text-align: left;
-  padding: 0 0 0 1em;
+  padding: 0 0 0 2.5em;
   width: 50%;
 }
 
-.reserve-btn {
+#reserve-btn {
   background-color: var(--primary3);
   border-style: none;
   color: var(--offWhite);
-  width: fit-content;
+  width: 300px;
+  font-weight: 500;
 }
 
 /* Divider */
@@ -241,6 +272,7 @@ footer {
 .about-main-content-wrapper {
   align-items: flex-start;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 1em 0;
 }
@@ -280,8 +312,9 @@ footer {
 }
 
 .about-cards p {
+  color: var(--secondary4);
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .about-cta-btn {
@@ -313,10 +346,12 @@ footer {
 .services-text-wrapper h3 {
   font-family: 'Abril Fatface', sans-serif;
   color: var(--primary3);
+  margin: 0 0 1em;
 }
 
-.service-text-wrapper p {
+.services-text-wrapper p {
   font-size: 1.25em;
+  font-weight: 200;
   color: var(--secondary4);
   opacity: .5;
   padding: 0 3em;
@@ -349,6 +384,7 @@ footer {
 
 .homepage-service-cards-wrapper {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: auto auto auto;
   column-gap: 1.5em;
   margin: 5em 0 2.1em;
@@ -372,7 +408,7 @@ footer {
   color: var(--offWhite);
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25em;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .service-tagline {
@@ -387,11 +423,12 @@ footer {
 }
 
 .read-more:hover {
-  color: var(--secondary4);
+  transform: scale(1.1, 1.1);
+  font-weight: bold;
 }
 
 .card1 {
-  background-color: var(--primary1);
+  background-color: var(--primary3);
 }
 
 .card2 {
@@ -399,5 +436,236 @@ footer {
 }
 
 .card3 {
-  background-color: var(--primary3);
+  background-color: var(--primary1);
+}
+
+/* Testimonials Section */
+
+.testimonials-section {
+  position: relative;
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  padding: 0 3em;
+  position: relative;
+  margin: 2.15em auto 1em;
+}
+
+/* Hide the images by default */
+.mySlides {
+  background-color: rgba(100, 100, 100, .1);
+  border: 1px solid var(--primary2);
+  border-radius: 10px;
+  display: none;
+}
+
+.mySlides img {
+  border: 1px solid var(--secondary4);
+  border-radius: 10px;
+  height: auto;
+  width: 400px;
+}
+
+/* Next & previous buttons */
+.prev {
+  left: 25%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--primary2);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 0 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 25%;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: var(--primary1);
+}
+
+/* Caption text */
+.text {
+  color: var(--primary1);
+  font-size: 30px;
+  padding: 75px 30px;
+  text-align: center;
+}
+
+.testimonial-title {
+  color: var(--secondary4);
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 1em 0 0;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--primary2);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: var(--primary2);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* Footer */
+.footer-div {
+  text-align: left;
+}
+
+.footer-div p {
+  font-weight: 300;
+}
+
+.footer-div p:hover {
+  font-weight: 500;
+  transform: scale(1.1, 1.1);
+}
+
+.footer-copywright-div {
+  margin: 2.5em 0 0;
+}
+.copywright {
+  margin: 1em 0 0;
+}
+.footer-faq, .footer-contact {
+  margin: 10px 0 0;
+}
+.copywright, .footer-FAQ, .footer-contact {
+  color: var(--offWhite);
+  font-size: 16px;
+}
+
+.socials-div {
+  align-items: center;
+  display: flex;
+}
+
+.socials-div i {
+  color: var(--offWhite);
+  font-size: 1.25em;
+  margin: 0 1em;
+}
+
+.socials-div i:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+/* Queries */
+@media only screen and (max-width: 1300px) {
+  .landing-p-text {
+    width: auto;
+}
+}
+
+
+@media only screen and (max-width: 1030px) {
+  .homepage-landing-section {
+    margin: 1em 0 1em;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .webinar-text-content {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .services-text-wrapper {
+    flex-wrap: wrap;
+  }
+  .homepage-service-cards-wrapper {
+    grid-template-columns: auto;
+  }
+  .service-cards {
+    margin: .5em .5em 1em;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .about-cards-wrapper {
+    grid-template-columns: auto;
+  }
+  .flyer-div img {
+    width: 300px;
+  }
+  footer {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+  .footer-div {
+  text-align: center;
+ }
+ .socials-div {
+   margin: 1em 0;
+ }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .lower-services-btn {
+    width: 300px;
+  }
+  .about-image {
+    width: 310px;
+  }
+  #reserve-btn {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .landing-content {
+    height: 80vh;
+  }
 }

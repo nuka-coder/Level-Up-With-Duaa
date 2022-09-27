@@ -77,16 +77,16 @@ p {
 
 .logo {
   border-radius: 100%;
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
 }
 
 /*  DESKTOP NAVIGATION */
 .nav {
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  margin: 1em 5em 1em 16em;
+  justify-content: center;
+  margin: 1em 2em;
 }
 
 .navlinks-container {
@@ -160,7 +160,6 @@ p {
 .active {
   background-color: var(--offWhite);
   color: white;
-  height: 90px;
   text-align: left;
 }
 

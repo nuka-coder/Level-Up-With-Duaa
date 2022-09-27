@@ -40,17 +40,27 @@ h4 {font-size: 1.875em;}
 h5 {font-size: 1.625em;}
 h6 {font-size: 1.375em;}
 
+a {
+  text-decoration: none;
+}
+
 p {
     font-family: 'Montserrat', monospace;
     font-size: 22px;
-    font-weight: 100;
+    font-weight: 300;
     margin: 0;
+}
+
+ul {
+  font-family: 'Montserrat', monospace;
 }
 
 footer {
   background-color: var(--primary2);
   height: 80px;
   width: 100%;
+  padding: 1.25em 1em .5em;
+  position: relative;
 }
 
 /* Services Landing */
@@ -156,6 +166,7 @@ footer {
     display: flex;
     justify-content: center;
     margin: 2em;
+    padding: 1.25em .25em;
     position: relative;
     height: 25em;
     width: 25vw;
@@ -164,8 +175,22 @@ footer {
 .service-text {
     color: var(--primary4);
     font-size: 1.25em;
-    padding: 1.875em;
     width: 80%;
+}
+
+.unordered-list-service-text {
+  text-align: left;
+}
+
+.unordered-list-service-text li {
+  color: var(--secondary4);
+  font-size: 15px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+
+.highlighted-li-items {
+  font-weight: 600 !important;
 }
 
 .card-circle {
@@ -184,25 +209,25 @@ footer {
     margin-left: auto;
 }
 .color1 {
-    background-color: var(--primary1);
+    background-color: var(--primary3);
 }
 .color2 {
     background-color: var(--primary2);
 }
 .color3 {
-    background-color: var(--primary3);
+    background-color: var(--primary1);
 }
 .card-circle p {
     font-size: 1.25em;
 }
 .card-style1 {
-    border: 5px solid var(--primary1);
+    border: 5px solid var(--primary3);
 }
 .card-style2 {
     border: 5px solid var(--primary2);
 }
 .card-style3 {
-    border: 5px solid var(--primary3);
+    border: 5px solid var(--primary1);
 }
 
 /* Pricing Section */
@@ -225,6 +250,16 @@ footer {
     font-size: 20px;
     font-weight: 500;
     text-align: left;
+}
+
+#pricing-card-anchor {
+  color: var(--primary2);
+  font-weight: 600 !important;
+  text-decoration: none;
+}
+
+#pricing-card-anchor:hover {
+  color: var(--primary1);
 }
 
 .pricing-symbol {
@@ -261,6 +296,27 @@ footer {
     font-weight: 500;
 }
 
+/* Footer */
+.footer-div {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  text-align: left;
+}
+
+.footer-copywright-div {
+  margin: 2.5em 0 0;
+}
+.copywright {
+  margin: 1em 0 0;
+}
+.footer-faq, .footer-contact {
+  margin: 10px 0 0;
+}
+.copywright, .footer-FAQ, .footer-contact {
+  color: var(--offWhite);
+  font-size: 16px;
+}
 
 /* ----- Media Queries ----- */
 

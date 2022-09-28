@@ -1,0 +1,162 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/events-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+	<script defer src="scripts/scripts.js" charset="utf-8"></script>
+	 <!-- Font Awesome CDN -->
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<title>Events</title>
+</head>
+<body>
+
+	<div id="page-container">
+
+		<!-- Header -->
+		  <header class="header">
+			  	<div class="header-top primary2">
+			      <p class="language-tag">EN</p>
+			    </div>
+			    <!-- Logo -->
+			    <div class="logo-container">
+			      <img class="logo" src="images/logo.png" alt="Level Up with Duaa Logo">
+			    </div>
+
+			    <!-- Desktop Navbar -->
+			    <nav class="nav desktop-nav">
+			    <div>
+
+			    <div class="navlinks-container">
+			      <div class="icon-container">
+			        <a href="about.html"><button style="background-color: var(--primary1)" class="navlink" id="about-btn">About</button></a>
+			        <img class="about-icon" id="about-icon" src="images/about-icon.png" alt="about icon">
+			      </div>
+
+			      <div class="icon-container">
+			      <a href="services.html"><button style="background-color: var(--primary2)" class="navlink" id="services-btn">Services</button></a>
+			      <img class="services-icon" id="services-icon" src="images/services-icon.png" alt="services icon">
+			      </div>
+
+			      <div class="icon-container">
+			        <a href="events.html"><button style="background-color: var(--primary3)" class="navlink" id="events-btn">Events</button></a>
+			        <img class="events-icon" id="events-icon" src="images/events-icon.png" alt="event icon">
+			      </div>
+			      <div class="login-container">
+			        <button class="login-btn member-btns">Login</button>
+			        <button class="becomeClient-btn member-btns">Become A Client</button>
+			      </div>
+			    </div>
+			    </div>
+			    </nav>
+
+			    <!-- Mobile Navigation Menu -->
+			  <div class="mobile-nav">
+			    <a href="#home" class="active"><img class="mobile-logo" style="width: 100px; height: 100px;"  src="images/logo.png" alt="logo"></a>
+
+			    <!-- Navigation links (hidden by default) -->
+			    <div id="mobileLinks">
+			      <a href="about.html">About</a>
+			      <a href="services.html">Services</a>
+			      <a href="events.html">Events</a>
+			    </div>
+			    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			    <a href="javascript:void(0);" class="icon">
+			      <i class="fa fa-bars hamburger-icon"></i>
+			    </a>
+			  </div>
+
+		  </header>
+
+		<main>
+			<h1 id="heading-events">UPCOMING WEBINAR</h1>
+
+			<h3 id="heading-webinar">Happy Before Happily Ever After</h3>
+
+			<img id="img-course" src="images/webinars/marriage_webinar.jpg" width="650em" height="450em">
+			<p id="heading-about-course">Request Reminder</p>
+
+			<p id="course-description">Please enter your information in order to receive an email reminder once the course is open for registration.</p>
+
+			<form id="reminder-form" action="http://formspree.io/ayaha2017@gmail.com" method="POST">
+					<label id="label-firstname">First Name</label>
+					<br>
+					<input id="input-firstname" type="text" name="firstname">
+					<br>
+					<br>
+					<label id="label-lastname">Last Name</label>
+					<br>
+					<input id="input-lastname" type="text" name="lastname">
+					<br>
+					<br>
+					<label id="label-email">Email</label>
+					<br>
+					<input id="input-email" type="email" name="email">
+					<br>
+					<br>
+					<input id="button-remind" type="submit" name="submit" value="SUBMIT">
+					
+			</form>
+
+			
+
+
+			<div >
+
+				<table id="green-section">
+					<tr>
+						<td>
+							<div id="month">
+								<p class="yellow-info">1-2<sup class="sup-text">nd</sup>, 8-9<sup class="sup-text">th</sup></p>
+								<p class="white-label">October</p>
+								<p class="add-info">Double weekend</p>
+							</div>
+						</td>
+
+						<td>
+							<div id="hours">
+								<p class="yellow-info">8</p>
+								<p class="white-label">Hours</p>
+								<p class="add-info">12:00 PM - 2:00 PM EST</p>
+								
+							</div>
+						</td>
+
+						<td>
+							<div id="openings">
+								<p class="yellow-info">100</p>
+								<p class="white-label">Openings</p>
+								<p class="add-info">Limited availability</p>
+							</div>
+						</td>
+
+						<td>
+							<div id="price">
+								<p class="yellow-info">$297</p>
+								<p class="white-label">Price</p>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+			</div>			
+
+		</main>
+
+
+		<!--	<footer>
+				<embed type="text/html" src="footer.html" width="100%">
+			</footer>-->
+
+	</div>
+
+	<!-- Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+</body>
+</html>

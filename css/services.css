@@ -58,9 +58,10 @@ ul {
 footer {
   background-color: var(--primary2);
   height: 80px;
-  width: 100%;
   padding: 1.25em 1em .5em;
   position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Services Landing */
@@ -298,10 +299,16 @@ footer {
 
 /* Footer */
 .footer-div {
-  position: absolute;
-  left: 1em;
-  top: 1em;
   text-align: left;
+}
+
+.footer-div p {
+  font-weight: 300;
+}
+
+.footer-div p:hover {
+  font-weight: 500;
+  transform: scale(1.1, 1.1);
 }
 
 .footer-copywright-div {
@@ -318,6 +325,21 @@ footer {
   font-size: 16px;
 }
 
+.socials-div {
+  align-items: center;
+  display: flex;
+}
+
+.socials-div i {
+  color: var(--offWhite);
+  font-size: 1.25em;
+  margin: 0 1em;
+}
+
+.socials-div i:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
 /* ----- Media Queries ----- */
 
 @media only screen and (max-width: 900px) {
@@ -328,4 +350,21 @@ footer {
     width: 80vw;
     margin-top: 3.5em;
   }
+}
+
+
+@media only screen and (max-width: 540px) {
+  footer {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+  .footer-div {
+  text-align: center;
+ }
+ .socials-div {
+   margin: 1em 0;
+ }
 }

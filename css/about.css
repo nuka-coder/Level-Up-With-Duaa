@@ -1,10 +1,14 @@
 body {
-	background-color: #FDFBF6;
-	padding: 0;
-	margin:  0;
-	font-family: 'Montserrat';
-	width: 100%;
-	overflow-x: hidden;
+    background-color: var(--offWhite);
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    text-align: center;
+		font-family: "Montserrat", sans-serif;
+}
+
+a {
+	text-decoration: none;
 }
 
 #footer-registration{
@@ -22,14 +26,10 @@ h1{
 footer {
   background-color: var(--primary2);
   height: 80px;
-  width: 100%;
-}
-
-section {
-  align-items: center;
+  padding: 1.25em 1em .5em;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 
@@ -37,81 +37,98 @@ section {
 /***********************About*********************************/
 /*************************************************************/
 
-#heading-about {
+.about-top-section {
+	align-items: center;
+	display: flex;
+ 	margin: 7em 2em 2em;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+	padding: 2em 1em;
+	background-color: var(--offWhite);
+	position: relative;
+	justify-content: center;
+}
+
+.about-main-text-div,
+.mobile-about-main-text-div {
+	color: var(--secondary1);
+}
+
+.about-heading {
 	font-family: 'Montserrat';
 	font-size: 5em;
 	font-weight: 800;
 	position: absolute;
-	top: 1em;
-	left: 2em;
+	top: -130px;
+	left: -1em;
 }
 
-#div-about {
-	background-color: white;
-	position: absolute;
-	z-index: -1;
-	top: 3.5em;
-	width: 55em;
-	max-width: 60em;
-	height: 32em;
-	margin-top: 10em;
-	margin-left: 10em;
-	color: #F1BC53;
-	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-}
-
-#div-about p{
-	width: 47em;
+.about-main-text-div p {
+	width: 50vw;
 	font-size: 0.95em;
-	padding: 3em;
-	text-align: justify;
+	padding: 2em 3em 1em;
 	line-height: 1.5em;
+	text-align: justify;
 	font-weight: bold;
 }
 
 #img-about {
-	position: absolute;
-	top: 12em;
-	left: 51em;
+	width: 30em;
 }
 
-#img-about-responsive {
-	max-width: 50em;
-	height: 35em;
-	max-height: auto;
+/* Affirmations Section */
+.affirmation-section {
+  margin: 2em 1em;
 }
-
-#div-affirmations {
-	position: absolute;
-	top: 50em;
-	margin-left: 6em;
-}
-
-#title-affirmations {
+.affirmation-top-heading {
 	color: #949D77;
 	font-size: 2em;
 	font-style: italic;
-	position: relative;
-	right: 2em;
+}
+
+.affirmation-wrapper {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.affirmation-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 0 10px;
+}
+.affirmation-headings {
+  display: inline-block;
+  width: 300px;
+  padding: .5em 1em;
+  color: var(--offWhite);
+  font-weight: 300;
+}
+
+.affirmation-text {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+}
+.text-chapter {
+  font-weight: bold;
+  margin: 0;
+}
+.yellow {
+  background-color: var(--primary1);
+}
+.green {
+  background-color: var(--primary2);
+}
+.pink {
+  background-color: var(--primary3);
 }
 
 .attribute-title {
 	font-size: 1.8em;
 	color: white;
-	padding-right: 5em;
-}
-
-#attribute-yellow {
-	width: 16em;
-	background-color: #d29e3b;
-}
-#attribute-green {
-	width: 16em;
-	background-color: #949d77;
-}
-#attribute-pink {
-	width: 16em;
-	background-color: #d5937d;
 }
 
 .attribute-p {
@@ -122,27 +139,6 @@ section {
 	padding-right: 2em;
 	position: relative;
 }
-
-#attribute-p-yellow {
-	position: relative;
-	top: -4em;
-	right: 2em;
-
-}
-
-#attribute-p-green {
-	position: relative;
-	top: -5.9em;
-	right: 1.7em;
-}
-
-#attribute-p-pink {
-	position: relative;
-	top: -1.4em;
-	right: 1.7em;
-}
-
-
 
 /*************************************************************/
 /************************FAQS*********************************/
@@ -269,21 +265,99 @@ section {
 }
 
 
+/* Footer */
+.footer-div {
+  text-align: left;
+}
 
-/*footer {
-	position: absolute;
-	bottom: -95em;
-	width: 100%;
-}*/
+.footer-div p {
+  font-weight: 300;
+}
+
+.footer-div p:hover {
+  font-weight: 500;
+  transform: scale(1.1, 1.1);
+}
+
+.footer-copywright-div {
+  margin: 2.5em 0 0;
+}
+.copywright {
+  margin: 1em 0 0;
+}
+.footer-faq, .footer-contact {
+  margin: 10px 0 0;
+}
+.copywright, .footer-FAQ, .footer-contact {
+  color: var(--offWhite);
+  font-size: 16px;
+}
+
+.socials-div {
+  align-items: center;
+  display: flex;
+}
+
+.socials-div i {
+  color: var(--offWhite);
+  font-size: 1.25em;
+  margin: 0 1em;
+}
+
+.socials-div i:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
 
 
 
 /* ----- Media Queries ----- */
 
+
+@media only screen and (max-width: 1150px ) {
+	.about-top-section {
+		flex-wrap: wrap-reverse;
+	}
+  .about-image {
+    margin: 1em 0 0 0;
+    width: 351px !important;
+  }
+  .about-main-text-div p {
+    width: 60vw;
+    padding: 1em 2em;
+  }
+}
+
+
 @media only screen and (max-width: 900px) {
   .main-about {
     flex-wrap: wrap;
   }
+}
 
+@media only screen and (max-width: 540px) {
+  footer {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+  .footer-div {
+  text-align: center;
+ }
+ .socials-div {
+   margin: 1em 0;
+ }
+}
 
-.}
+@media only screen and (max-width: 470px) {
+.about-heading {
+  font-size: 3em !important;
+  top: -75px;
+}
+.about-image {
+  width: 210px !important;
+}
+}

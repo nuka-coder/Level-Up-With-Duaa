@@ -1,0 +1,363 @@
+body {
+    background-color: var(--offWhite);
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    text-align: center;
+		font-family: "Montserrat", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+#footer-registration{
+	background-color: #949D77;
+}
+
+h1{
+	margin-top: 1em;
+	margin-left: 2em;
+	font-family: 'Abril Fatface';
+	color: #949D77;
+	font-size: 3em;
+}
+
+footer {
+  background-color: var(--primary2);
+  height: 80px;
+  padding: 1.25em 1em .5em;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/*************************************************************/
+/***********************About*********************************/
+/*************************************************************/
+
+.about-top-section {
+	align-items: center;
+	display: flex;
+ 	margin: 7em 2em 2em;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+	padding: 2em 1em;
+	background-color: var(--offWhite);
+	position: relative;
+	justify-content: center;
+}
+
+.about-main-text-div,
+.mobile-about-main-text-div {
+	color: var(--secondary1);
+}
+
+.about-heading {
+	font-family: 'Montserrat';
+	font-size: 5em;
+	font-weight: 800;
+	position: absolute;
+	top: -130px;
+	left: -1em;
+}
+
+.about-main-text-div p {
+	width: 50vw;
+	font-size: 0.95em;
+	padding: 2em 3em 1em;
+	line-height: 1.5em;
+	text-align: justify;
+	font-weight: bold;
+}
+
+#img-about {
+	width: 30em;
+}
+
+/* Affirmations Section */
+.affirmation-section {
+  margin: 2em 1em;
+}
+.affirmation-top-heading {
+	color: #949D77;
+	font-size: 2em;
+	font-style: italic;
+}
+
+.affirmation-wrapper {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.affirmation-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 0 10px;
+}
+.affirmation-headings {
+  display: inline-block;
+  width: 300px;
+  padding: .5em 1em;
+  color: var(--offWhite);
+  font-weight: 300;
+}
+
+.affirmation-text {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+}
+.text-chapter {
+  font-weight: bold;
+  margin: 0;
+}
+.yellow {
+  background-color: var(--primary1);
+}
+.green {
+  background-color: var(--primary2);
+}
+.pink {
+  background-color: var(--primary3);
+}
+
+.attribute-title {
+	font-size: 1.8em;
+	color: white;
+}
+
+.attribute-p {
+	font-size: 1.4em;
+	width: 15em;
+	text-align: justify;
+	padding-left: 2em;
+	padding-right: 2em;
+	position: relative;
+}
+
+/*************************************************************/
+/************************FAQS*********************************/
+/*************************************************************/
+#heading-faq {
+	margin-left: 4.8em;
+}
+
+#div-faq {
+	position: relative;
+	top: 80em;
+	right: 6em;
+}
+
+#faqs-left {
+		position: relative;
+		width: 50em;
+		left: 8em;
+}
+
+#faqs-right {
+	position: relative;
+	width: 50em;
+	top: -25.25em;
+	left: 50em;
+}
+
+#consultation-div {
+	position: absolute;
+	top: 35em;
+	left: 6.5em;
+}
+
+/*********Accordion**********/
+
+.accordion-pink {
+	cursor:  pointer;
+	width: 70%;
+	height: 3.5em;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 120%;
+	transition: 0.4s;
+	background-image: url("images/faq_buttons/faq_button_pink.png");
+	margin-left: 5.5em;
+	background-color: white;
+	font-family: 'Montserrat';
+	box-shadow: 3px 3px 10px 2px #888888;
+}
+
+.accordion-green {
+	cursor:  pointer;
+	width: 70%;
+	height: 3.5em;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 120%;
+	transition: 0.4s;
+	background-image: url("images/faq_buttons/faq_button_green.png");
+	margin-left: 5.5em;
+	background-color: white;
+	font-family: 'Montserrat';
+	box-shadow: 3px 3px 10px 2px #888888;
+}
+
+.accordion-yellow {
+	cursor:  pointer;
+	width: 70%;
+	height: 3.5em;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 120%;
+	transition: 0.4s;
+	background-image: url("images/faq_buttons/faq_button_yellow.png");
+	margin-left: 5.5em;
+	background-color: white;
+	font-family: 'Montserrat';
+	box-shadow: 3px 3px 10px 2px #888888;
+
+}
+
+.active, .accordion-pink:hover, .accordion-green:hover, .accordion-yellow:hover {
+  background-color: #d5937d;
+}
+
+.question {
+	height: 0em;
+	margin-left: 2em;
+	margin-top: 0;
+	padding: 0;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 65.5%;
+  margin-left: 6.5em;
+  text-align: justify;
+  font-size: 110%;
+}
+
+
+#faq-blurb {
+	color: #56544e;
+	margin-left: 25em;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 8em;
+}
+
+#consultation {
+	margin-left: 9em;
+	height: 3em;
+	border-radius: 3px;
+	border: 1px solid #949d77;
+	background-color: #949d77;
+	color: white;
+	padding: 1em;
+}
+
+
+/* Footer */
+.footer-div {
+  text-align: left;
+}
+
+.footer-div p {
+  font-weight: 300;
+}
+
+.footer-div p:hover {
+  font-weight: 500;
+  transform: scale(1.1, 1.1);
+}
+
+.footer-copywright-div {
+  margin: 2.5em 0 0;
+}
+.copywright {
+  margin: 1em 0 0;
+}
+.footer-faq, .footer-contact {
+  margin: 10px 0 0;
+}
+.copywright, .footer-FAQ, .footer-contact {
+  color: var(--offWhite);
+  font-size: 16px;
+}
+
+.socials-div {
+  align-items: center;
+  display: flex;
+}
+
+.socials-div i {
+  color: var(--offWhite);
+  font-size: 1.25em;
+  margin: 0 1em;
+}
+
+.socials-div i:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+
+
+
+/* ----- Media Queries ----- */
+
+
+@media only screen and (max-width: 1150px ) {
+	.about-top-section {
+		flex-wrap: wrap-reverse;
+	}
+  .about-image {
+    margin: 1em 0 0 0;
+    width: 351px !important;
+  }
+  .about-main-text-div p {
+    width: 60vw;
+    padding: 1em 2em;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .main-about {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  footer {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+  .footer-div {
+  text-align: center;
+ }
+ .socials-div {
+   margin: 1em 0;
+ }
+}
+
+@media only screen and (max-width: 470px) {
+.about-heading {
+  font-size: 3em !important;
+  top: -75px;
+}
+.about-image {
+  width: 210px !important;
+}
+}

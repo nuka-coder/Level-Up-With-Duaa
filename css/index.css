@@ -217,6 +217,10 @@ section {
   width: 50%;
 }
 
+.webinar-text-content p {
+  text-align: justify;
+}
+
 #reserve-btn {
   background-color: var(--primary3);
   border-style: none;
@@ -603,6 +607,12 @@ section {
 }
 }
 
+@media only screen and (max-width: 700px) {
+.webinar-text-content {
+  padding: 0;
+}
+}
+
 
 @media only screen and (max-width: 1030px) {
   .homepage-landing-section {
@@ -627,6 +637,12 @@ section {
   .service-cards {
     margin: .5em .5em 1em;
   }
+}
+
+@media only screen and (max-width: 700px) {
+.landing-content {
+  height: auto;
+}
 }
 
 @media only screen and (max-width: 540px) {
@@ -661,11 +677,5 @@ section {
   }
   #reserve-btn {
     width: 250px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .landing-content {
-    height: 80vh;
   }
 }

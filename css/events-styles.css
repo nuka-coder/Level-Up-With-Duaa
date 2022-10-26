@@ -1,67 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-	background-color: #FDFBF6;
-	padding: 0;
-	margin:  0;
-	font-family: 'Montserrat';
-	overflow-x: hidden;
+    background-color: var(--offWhite);
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    text-align: center;
+		font-family: 'Montserrat';
 }
 
-footer{
-	/*background: #949D77;*/
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+button:hover {
+  transform: scale(1.1, 1.1);
 }
 
-h1{
-	margin-top: 1em;
-	margin-left: 4.9em;
-	font-family: 'Abril Fatface';
-	color: #949D77;
-	font-size: 3em;
+h1 {
+    font-family: 'Abril Fatface', sans-serif !important;
+    font-size: 3.75em;
+    font-weight: 400;
+    margin: 0;
+}
+h2 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0;
+}
+h3, h4, h5, h6 {
+    font-family: 'Montserrat', monospace;
+    font-weight: 600;
+    margin: 0;
+}
+h3 {font-size: 2.25em;}
+h4 {font-size: 1.875em;}
+h5 {font-size: 1.625em;}
+h6 {font-size: 1.375em;}
+
+a {
+  text-decoration: none;
 }
 
-main {
+p {
+    font-family: 'Montserrat', monospace;
+		font-weight: 400;
 }
 
-#heading-events {
+footer {
+  background-color: var(--primary2);
+  height: 80px;
+  padding: 1.25em 1em .5em;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.webinar-top-section {
+	display: flex;
+	justify-content: center;
+	padding: 3em;
+}
+.webinar-main-heading {
+	color: var(--secondary4);
+	font-family: 'Abril Fatface' sans-serif;
+	font-size: 2.5em;
+	text-align: left;
+}
+.webinar-title {
+	color: var(--primary3);
+	font-size: 1.25em;
+	text-align: left;
+	margin-bottom: 1em;
+}
+.webinar-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.webinar-img {
+	width: 600px;
+}
+.about-course-heading {
+	font-family: 'Abril Fatface' sans-serif;
+	text-align: left;
+	color: var(--primary1);
+	font-size: 2em;
+	font-weight: 400;
+
+}
+.course-info {
+	text-align: justify;
+	font-weight: 400;
+}
+.lower-content {
+	margin: 4.15em 0 0 1em;
+}
+
+
+
+
+.heading-events {
 	color: black;
-	position: relative;
-	top: 0.6em;
 }
 
-#heading-webinar {
+.heading-webinar {
 	color: #d5937d;
 	font-family: sans-serif;
 	font-size: 1.8em;
-	position: relative;
-	left: 8.3em;
 }
 
-#img-course {
+.img-course {
 	margin-left: 15em;
-	position: relative;
 }
 
-#heading-about-course {
-	position: absolute;
-	top: 9.5em;
-	margin-left: 32.5em;
+.heading-about-course {
 	color: #d29e3b;
 	font-size: 180%;
 	font-weight: bolder;
 }
 
-#course-description {
+.course-description {
 	width: 18em;
 	font-size: 110%;
 	margin-left: 53em;
-	position: relative;
-	top: -24em;
 	text-align: justify;
 }
 
-#button-reserve {
+.reserve-btn {
 	color: white;
 	font-weight: bold;
 	background-color: #d29e3b;
@@ -69,96 +133,152 @@ main {
 	border-radius: 0.5em;
 	height: 3.5em;
 	width: 18.5em;
-	position: relative;
-	margin-left: 55.5em;
-	top: -23.9em;
 	font-family: 'Montserrat';
-	font-size: 105%;
+	font-size: 1em;
 	cursor: pointer;
 }
 
-#green-section {
-	width: 63em;
-	height: 10em;
-	background-color: #949d77;
-	position: relative;
-	top: -23em;
-	left: 15em;
-	border-radius: 0.5em;
-}
 
-#green-section td {
-	width: 20em;
+
+.green-section {
+	background-color: #949d77;
+	border-radius: 0.5em;
+	display: flex;
+	margin: 3em;
+	justify-content: space-around;
 }
 
 .yellow-info {
-	color: #f1bc53;
-	font-size: 200%;
-	font-weight: bolder;
-	font-family: 'Arial';
-	margin-left: 0.5em;
+	color: var(--secondary1);
+	font-weight: 800;
+	font-family: 'Montserrat' sans-serif;
+	font-size: 2.25em;
+	margin: 5px;
 }
 
 .white-label {
 	color: white;
 	font-style: italic;
-	font-family: 'Arial';
-	font-size: 130%;
-	margin-left: 0.8em;
-	position: relative;
-	top: -1em;
+	font-weight: 600;
+	font-size: 1.5em;
+	margin: 5px;
 }
 
-#month, #hours, #openings {
+.month, .hours, .openings {
 	border-right: 2.5px solid white;
-	height: 7em;
+	padding: 1em;
 }
 
-#price {
-	height: 7em;
+.price {
+	padding: 1em;
 }
 
 .add-info {
-	position: relative;
-	top: -1.5em;
-	left: 1em;
 	color: white;
-	font-size: 1em;
+	font-size: 1.5em;
+	font-weight: 400;
 }
 
-#heading-past-webinars {
+.heading-past-webinars {
 	color: black;
-	position: relative;
-	top: 5em;
 }
 
 .sup-text {
-	font-size: 60%;
+	font-size: 15px;
 }
 
 
-/*************************************************************/
-/***********************Request Reminder**********************/
-/*************************************************************/
 
-#reminder-form {
-	position: relative;
-	top: -25.5em;
-	left: 62.5em;
+/* Footer */
+.footer-div {
+  text-align: left;
 }
 
-#button-remind {
-	color: white;
-	font-weight: bold;
-	background-color: #d29e3b;
-	border: none;
-	border-radius: 0.5em;
-	height: 3.5em;
-	width: 18.3em;
-	position: relative;
-	right: 3.5em;
-	top: 2.em;
-	font-family: 'Montserrat';
-	font-size: 105%;
-	cursor: pointer;
+.footer-div p {
+  font-weight: 300;
+}
+
+.footer-div p:hover {
+  font-weight: 500;
+  transform: scale(1.1, 1.1);
+}
+
+.footer-copywright-div {
+  margin: 2.5em 0 0;
+}
+.copywright {
+  margin: 1em 0 0;
+}
+.footer-faq, .footer-contact {
+  margin: 10px 0 0;
+}
+.copywright, .footer-FAQ, .footer-contact {
+  color: var(--offWhite);
+  font-size: 16px;
+}
+
+.socials-div {
+  align-items: center;
+  display: flex;
+}
+
+.socials-div i {
+  color: var(--offWhite);
+  font-size: 1.25em;
+  margin: 0 1em;
+}
+
+.socials-div i:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+
+
+@media only screen and (max-width: 1100px) {
+	.webinar-top-section {
+		flex-wrap: wrap;
+	}
+	.webinar-main-heading,
+	.webinar-title {
+		text-align: center;
+	}
+	.lower-content {
+		align-items: center;
+		margin: 1em;
+	}
+	.about-course-heading {
+		margin: 8px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.green-section {
+		flex-direction: column;
+	}
+	.month, .hours, .openings {
+	border-right: none;
+	border-bottom: 2.5px solid white;
+}
+}
+
+@media only screen and (max-width: 650px) {
+	.webinar-img {
+		width: 80vw;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+  footer {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+  .footer-div {
+  text-align: center;
+ }
+ .socials-div {
+   margin: 1em 0;
+ }
 }

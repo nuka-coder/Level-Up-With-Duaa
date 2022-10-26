@@ -34,6 +34,41 @@ $("#about-btn").hover(function() {
   $(this).css("background-color", "#D29E3B");
 });
 
+// FAQ Section
+
+function revealFaq0() {
+  $("#faq-answer0").slideToggle();
+}
+function revealFaq1() {
+  $("#faq-answer1").slideToggle();
+}
+function revealFaq2() {
+  $("#faq-answer2").slideToggle();
+}
+function revealFaq3() {
+  $("#faq-answer3").slideToggle();
+}
+function revealFaq4() {
+  $("#faq-answer4").slideToggle();
+}
+
+function revealFaq5() {
+  $("#faq-answer5").slideToggle();
+}
+function revealFaq6() {
+  $("#faq-answer6").slideToggle();
+}
+function revealFaq7() {
+  $("#faq-answer7").slideToggle();
+}
+function revealFaq8() {
+  $("#faq-answer8").slideToggle();
+}
+function revealFaq9() {
+  $("#faq-answer9").slideToggle();
+}
+
+
 
 // MOBILE NAVIGATION
 

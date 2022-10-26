@@ -61,7 +61,7 @@ footer {
   padding: 1.25em 1em .5em;
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 /* Services Landing */

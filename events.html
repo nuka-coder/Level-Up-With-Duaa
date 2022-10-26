@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,152 +8,172 @@
 	<link rel="stylesheet" type="text/css" href="css/events-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/navigation.css">
 	<script defer src="scripts/scripts.js" charset="utf-8"></script>
-	 <!-- Font Awesome CDN -->
-  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 	<title>Events</title>
+	<!-- Google Fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
 
 	<div id="page-container">
-		 <!-- Header -->
-		  <header class="header">
-		    <div class="header-top primary2">
-		      <p class="language-tag">EN</p>
-		    </div>
-		    <!-- Logo -->
-		    <div class="logo-container">
-		      <img class="logo" src="images/logo.PNG" alt="Level Up with Duaa Logo">
-		    </div>
-
-		    <!-- Desktop Navbar -->
-		    <nav class="nav desktop-nav">
-		    <div>
-
-		    <div class="navlinks-container">
-		      <div class="icon-container">
-		        <a href="about.html"><button style="background-color: var(--primary1)" class="navlink" id="about-btn">About</button></a>
-		        <img class="about-icon" id="about-icon" src="images/about-icon.png" alt="about icon">
-		      </div>
-
-		      <div class="icon-container">
-		      <a href="services.html"><button style="background-color: var(--primary2)" class="navlink" id="services-btn">Services</button></a>
-		      <img class="services-icon" id="services-icon" src="images/services-icon.png" alt="services icon">
-		      </div>
-
-		      <div class="icon-container">
-		        <a href="events.html"><button style="background-color: var(--primary3)" class="navlink" id="events-btn">Events</button>
-		        <img class="events-icon" id="events-icon" src="images/events-icon.png" alt="event icon">
-		      </div>
-		      <div class="login-container">
-		        <button class="login-btn member-btns">Login</button>
-		        <button class="becomeClient-btn member-btns">Become A Client</button>
-		      </div>
-		    </div>
-		    </div>
-		    </nav>
-
-		    <!-- Mobile Navigation Menu -->
-		  <div class="mobile-nav">
-		    <a href="#home" class="active"><img class="mobile-logo" style="width: 100px; height: 100px;"  src="images/logo.PNG" alt="logo"></a>
-
-		    <!-- Navigation links (hidden by default) -->
-		    <div id="mobileLinks">
-		      <a href="about.html">About</a>
-		      <a href="services.html">Services</a>
-		      <a href="events.html">Events</a>
-		    </div>
-		    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-		    <a href="javascript:void(0);" class="icon">
-		      <i class="fa fa-bars hamburger-icon"></i>
-		    </a>
-		  </div>
-
-		  </header>
-
-
-		<main>
-			<h1 id="heading-events">UPCOMING WEBINAR</h1>
-
-			<h3 id="heading-webinar">Happy Before Happily Ever After</h3>
-
-			<img id="img-course" src="images/webinars/marriage_webinar.JPG" width="650em" height="450em">
-			<p id="heading-about-course">About the course</p>
-
-			<p id="course-description"> A course designed for the woman sick of societal expectations on the marital status of a woman, but desires to find a spouse that compliments her wants, needs, and desires. The content will dig into the most frustrating aspects about the search process and coach you to setting healthy boundaries with yourself, the aunties, and the generic f-boy. We'll dive deep into red flags, narcists, and healthy expectations that align to our modern, yet Islamically aligned era.</p>
-
-			<input id="button-reserve" onclick="requestReminder()" type="button" name="email" value="REQUEST REMINDER">
-
-
-			<div >
-
-				<table id="green-section">
-					<tr>
-						<td>
-							<div id="month">
-								<p class="yellow-info">1-2<sup class="sup-text">nd</sup>, 8-9<sup class="sup-text">th</sup></p>
-								<p class="white-label">October</p>
-								<p class="add-info">Double weekend</p>
-							</div>
-						</td>
-
-						<td>
-							<div id="hours">
-								<p class="yellow-info">8</p>
-								<p class="white-label">Hours</p>
-								<p class="add-info">12:00 PM - 2:00 PM EST</p>
-
-							</div>
-						</td>
-
-						<td>
-							<div id="openings">
-								<p class="yellow-info">100</p>
-								<p class="white-label">Openings</p>
-								<p class="add-info">Limited availability</p>
-							</div>
-						</td>
-
-						<td>
-							<div id="price">
-								<p class="yellow-info">$297</p>
-								<p class="white-label">Price</p>
-							</div>
-						</td>
-					</tr>
-				</table>
-
+		<!-- Header -->
+		<header class="header">
+			<div class="header-top primary2">
+				<p class="language-tag">EN</p>
+			</div>
+			<!-- Logo -->
+			<div class="logo-container">
+				<a href="index.html"> <img class="logo" src="images/logo.PNG" alt="Level Up with Duaa Logo">
+				</a>
 			</div>
 
+			<!-- Desktop Navbar -->
+			<nav class="nav desktop-nav">
+				<div>
 
-			<!--<h1 id="heading-past-webinars">Past Webinars</h1>-->
+					<div class="navlinks-container">
+						<div class="icon-container">
+							<a href="about.html"><button style="background-color: var(--primary1)" class="navlink" id="about-btn">About</button></a>
+							<img class="about-icon" id="about-icon" src="images/about-icon.png" alt="about icon">
+						</div>
 
-		</main>
+						<div class="icon-container">
+							<a href="services.html"><button style="background-color: var(--primary2)" class="navlink" id="services-btn">Services</button></a>
+							<img class="services-icon" id="services-icon" src="images/services-icon.png" alt="services icon">
+						</div>
+
+						<div class="icon-container">
+							<a href="events.html"><button style="background-color: var(--primary3)" class="navlink" id="events-btn">Events</button>
+								<img class="events-icon" id="events-icon" src="images/events-icon.png" alt="event icon">
+						</div>
+						<div class="login-container">
+							<button class="login-btn member-btns">Login</button>
+							<button class="becomeClient-btn member-btns">Become A Client</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Mobile Navigation Menu -->
+			<div class="mobile-nav">
+				<a href="#home" class="active"><img class="mobile-logo" style="width: 100px; height: 100px;" src="images/logo.PNG" alt="logo"></a>
+
+				<!-- Navigation links (hidden by default) -->
+				<div id="mobileLinks">
+					<a href="about.html">About</a>
+					<a href="services.html">Services</a>
+					<a href="events.html">Events</a>
+				</div>
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon">
+					<i class="fa fa-bars hamburger-icon"></i>
+				</a>
+			</div>
+
+		</header>
+
+
+		<section class="webinar-top-section">
+			<div class="webinar-content">
+				<div>
+					<h1 class="webinar-main-heading">UPCOMING WEBINAR</h1>
+
+					<h3 class="webinar-title">Happy Before Happily Ever After</h3>
+
+					<img class="webinar-img" src="images/webinars/marriage_webinar.JPG">
+				</div>
+			</div>
+
+			<div class="webinar-content lower-content">
+				<p class="about-course-heading">About the course</p>
+
+				<p class="course-info">A course designed for the woman sick of societal expectations on the marital status of a woman, but desires to find a spouse that compliments her wants, needs, and desires. The content will dig into the most frustrating
+					aspects about the search process and coach you to setting healthy boundaries with yourself, the aunties, and the generic f-boy. We'll dive deep into red flags, narcissist's, and healthy expectations that align to our modern, yet Islamically
+					aligned era.</p>
+
+				<button class="reserve-btn">Reserve Your Spot</button>
+			</div>
+
+		</section>
+
+		<section class="green-section">
+			<div class="month">
+				<p class="yellow-info">1-2<sup class="sup-text">nd</sup>, 8-9<sup class="sup-text">th</sup></p>
+				<p class="white-label">October</p>
+				<p class="add-info">Double weekend</p>
+			</div>
+
+			<div class="hours">
+				<p class="yellow-info">8</p>
+				<p class="white-label">Hours</p>
+				<p class="add-info">12:00 PM - 2:00 PM EST</p>
+			</div>
+
+			<div class="openings">
+				<p class="yellow-info">100</p>
+				<p class="white-label">Openings</p>
+				<p class="add-info">Limited availability</p>
+			</div>
+
+			<div class="price">
+				<p class="yellow-info">$297</p>
+				<p class="white-label">Price</p>
+			</div>
+		</section>
+
+
+		<!--<h1 id="heading-past-webinars">Past Webinars</h1>-->
+
 
 
 		<script type="text/javascript">
-		    document.getElementById("button-reserve").onclick = function requestReminder() {
-		        location.href = "reminder-form.html";
-		    };
+			document.getElementById("button-reserve").onclick = function requestReminder() {
+				location.href = "reminder-form.html";
+			};
 		</script>
 
 		<!-- Jquery CDN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-
-
-
-
-
-
-	<!--	<footer>
-			<embed type="text/html" src="footer.html" width="100%">
-		</footer>-->
-
 	</div>
+
+	<section>
+		<footer>
+			<div class="footer-div">
+				<a href="about.hmtl#div-faq">
+					<p class="footer-FAQ">FAQ</p>
+				</a>
+				<a href="contact.html">
+					<p class="footer-contact">Contact</p>
+				</a>
+			</div>
+			<div class="footer-copywright-div">
+				<p class="copywright">Level Up With Duaa 2022 ©</p>
+			</div>
+
+			<div class="socials-div">
+				<div>
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div>
+					<i class="fab fa-instagram"></i>
+				</div>
+			</div>
+
+		</footer>
+	</section>
 
 
 
 
 </body>
+
 </html>

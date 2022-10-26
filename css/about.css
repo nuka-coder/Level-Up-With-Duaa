@@ -111,8 +111,9 @@ footer {
   display: inline-block;
   text-align: center;
   width: 300px;
+  font-weight: 400;
 }
-.text-chapter {
+.text-chapter {color: var(--secondary4);
   font-weight: bold;
   margin: 0;
 }
@@ -143,127 +144,73 @@ footer {
 /*************************************************************/
 /************************FAQS*********************************/
 /*************************************************************/
-#heading-faq {
-	margin-left: 4.8em;
+.faq-main-title {
+  color: var(--secondary4);
 }
-
-#div-faq {
-	position: relative;
-	top: 80em;
-	right: 6em;
+.faq-section,
+.faq-lower-section {
+  display: flex;
+  padding: 2em 1em;
 }
-
-#faqs-left {
-		position: relative;
-		width: 50em;
-		left: 8em;
+.faq-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
 }
-
-#faqs-right {
-	position: relative;
-	width: 50em;
-	top: -25.25em;
-	left: 50em;
+.faq-container {
+  display: inline-block;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, .25);
+  transition: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
 }
-
-#consultation-div {
-	position: absolute;
-	top: 35em;
-	left: 6.5em;
+.faq-container-red {
+  border-left: 10px solid #A37060;
 }
-
-/*********Accordion**********/
-
-.accordion-pink {
-	cursor:  pointer;
-	width: 70%;
-	height: 3.5em;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 120%;
-	transition: 0.4s;
-	background-image: url("images/faq_buttons/faq_button_pink.png");
-	margin-left: 5.5em;
-	background-color: white;
-	font-family: 'Montserrat';
-	box-shadow: 3px 3px 10px 2px #888888;
+.faq-container-green {
+  border-left: 10px solid #656b51;
 }
-
-.accordion-green {
-	cursor:  pointer;
-	width: 70%;
-	height: 3.5em;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 120%;
-	transition: 0.4s;
-	background-image: url("images/faq_buttons/faq_button_green.png");
-	margin-left: 5.5em;
-	background-color: white;
-	font-family: 'Montserrat';
-	box-shadow: 3px 3px 10px 2px #888888;
+.faq-container-yellow {
+  border-left: 10px solid #d29e3b;
 }
-
-.accordion-yellow {
-	cursor:  pointer;
-	width: 70%;
-	height: 3.5em;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 120%;
-	transition: 0.4s;
-	background-image: url("images/faq_buttons/faq_button_yellow.png");
-	margin-left: 5.5em;
-	background-color: white;
-	font-family: 'Montserrat';
-	box-shadow: 3px 3px 10px 2px #888888;
-
+.faq-question {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: var(--secondary4);
+  padding: .5em .25em;
 }
-
-.active, .accordion-pink:hover, .accordion-green:hover, .accordion-yellow:hover {
-  background-color: #d5937d;
-}
-
-.question {
-	height: 0em;
-	margin-left: 2em;
-	margin-top: 0;
-	padding: 0;
-}
-
-.panel {
-  padding: 0 18px;
+#faq-answer0, #faq-answer1,
+#faq-answer2, #faq-answer3,
+#faq-answer4, #faq-answer5,
+#faq-answer6, #faq-answer7,
+#faq-answer8, #faq-answer9 {
+  cursor: pointer;
   display: none;
-  background-color: white;
-  overflow: hidden;
-  width: 65.5%;
-  margin-left: 6.5em;
-  text-align: justify;
-  font-size: 110%;
 }
-
-
-#faq-blurb {
-	color: #56544e;
-	margin-left: 25em;
-	font-size: 15px;
-	font-weight: bold;
-	margin-left: 8em;
+.faq-answer-text {
+  font-weight: 400;
 }
-
-#consultation {
-	margin-left: 9em;
-	height: 3em;
-	border-radius: 3px;
-	border: 1px solid #949d77;
-	background-color: #949d77;
-	color: white;
-	padding: 1em;
+.faq-answer-container {
+  display: inline-block;
 }
-
+.redFaq {
+  background-color: var(--primary3);
+  border-left: 10px solid #A37060;
+}
+.greenFaq {
+  background-color: var(--primary2);
+  border-left: 10px solid #656b51;
+}
+.yellowFaq {
+  background-color: var(--secondary1);
+  border-left: 10px solid #d29e3b;
+}
+.faq-answer-text {
+  color: var(--offWhite);
+  font-size: 1em;
+  padding: .5em;
+}
 
 /* Footer */
 .footer-div {
@@ -281,9 +228,6 @@ footer {
 
 .footer-copywright-div {
   margin: 2.5em 0 0;
-}
-.copywright {
-  margin: 1em 0 0;
 }
 .footer-faq, .footer-contact {
   margin: 10px 0 0;
@@ -350,6 +294,18 @@ footer {
  .socials-div {
    margin: 1em 0;
  }
+}
+@media only screen and (min-width: 800px) {
+  .faq-container:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .faq-section,
+  .faq-lower-section {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 470px) {
